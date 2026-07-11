@@ -38,6 +38,10 @@ const NavigationBar = () => {
                 Delete Registration
               </Link>
 
+                <Link className="nav-link" to="/view">
+                View Registration
+              </Link>
+
             </div>
           </div>
 
