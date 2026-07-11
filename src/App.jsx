@@ -4,15 +4,26 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import AddRegistration from './components/AddRegistration'
+import SearchReg from './components/SearchReg'
+import DeleteReg from './components/DeleteReg'
+import NavigationBar from './components/NavigationBar'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import View from './components/View'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <AddRegistration/>
 
-
+  <BrowserRouter>
+  <Routes>
+      <Route path='/' element={<AddRegistration/>}/>
+      <Route path='/search' element={<SearchReg/>}/>
+      <Route path='/delete' element={<DeleteReg/>}/>
+      <Route path='/view' element={<View/>}/>
+  </Routes>
+  </BrowserRouter>
 
     </>
   )
