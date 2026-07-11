@@ -1,8 +1,8 @@
 import React from 'react'
 
-const SearchReg = () => {
+const DeleteReg = () => {
   return (
-    <div>
+   <div>
 
       <div className="container mt-5">
         <div className="row">
@@ -21,7 +21,7 @@ const SearchReg = () => {
 
                 <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 mt-4">
                   <button className="btn btn-success">
-                    SEARCH
+                    DELETE
                   </button>
                 </div>
 
@@ -37,4 +37,4 @@ const SearchReg = () => {
   )
 }
 
-export default SearchReg
+export default DeleteReg
